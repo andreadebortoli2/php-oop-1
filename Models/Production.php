@@ -6,6 +6,7 @@ class Production
     public $title;
     public $language;
     public $vote;
+    public $genre;
 
     public function setVote($n)
     {
@@ -16,10 +17,11 @@ class Production
     }
 
     //constructor function
-    public function __construct(string $title, string $language, int $vote)
+    public function __construct(string $title, string $language, int $vote, Genre $genre)
     {
         $this->title = $title;
         $this->language = $language;
         $this->setVote($vote);
+        $this->genre = $genre;
     }
 }
