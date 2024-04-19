@@ -1,4 +1,6 @@
-## Descrizione
+### Descrizione
+
+##  PART 1
 
 Oggi pomeriggio ripassate i primi concetti di classe, variabili e metodi d'istanza che abbiamo visto stamattina:
     - create un file index.php in cui è definita una classe Production
@@ -21,3 +23,16 @@ Oggi pomeriggio ripassate i primi concetti di classe, variabili e metodi d'istan
     - Create una classe Genre (gli attributi potrebbero essere nome e descrizione)
     - fate in modo che la classe Production accetti un genere nel costruttore.
     - Aggiornate le informazioni stampate a schermo con il genere.
+
+## PART 2
+
+- Aggiungete al lavoro di ieri le classi Movie e TVSerie:
+    - La classe Movie gestisce due proprietà: profitti e durata.
+    - La classe TVSerie gestisce il numero di stagioni.
+
+- Facciamo in modo che Movie e TVSerie ereditino le proprietà di base dalla classe Production.
+
+- Creiamo delle istanze di Movie e TVSerie e stampiamo le informazioni a schermo.
+
+# BONUS:
+    - Facciamo in modo che la classe Production accetti più di un genere.

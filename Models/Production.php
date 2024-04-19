@@ -13,6 +13,10 @@ class Production
         // check if the vote is between 1 and 10
         if ($n > 0  && $n < 11) {
             $this->vote = $n;
+        } else if ($n > 10) {
+            $this->vote = 'Incredibly good';
+        } else if ($n <= 0) {
+            $this->vote = 'Terrible';
         }
     }
 
