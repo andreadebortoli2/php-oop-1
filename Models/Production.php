@@ -8,6 +8,16 @@ class Production
     public $vote;
     public $genre;
 
+
+    //constructor function
+    public function __construct(string $title, string $language, int $vote, Genre $genre)
+    {
+        $this->title = $title;
+        $this->language = $language;
+        $this->setVote($vote);
+        $this->genre = $genre;
+    }
+
     public function setVote($n)
     {
         // check if the vote is between 1 and 10
@@ -18,14 +28,5 @@ class Production
         } else if ($n <= 0) {
             $this->vote = 'Terrible';
         }
-    }
-
-    //constructor function
-    public function __construct(string $title, string $language, int $vote, Genre $genre)
-    {
-        $this->title = $title;
-        $this->language = $language;
-        $this->setVote($vote);
-        $this->genre = $genre;
     }
 }
